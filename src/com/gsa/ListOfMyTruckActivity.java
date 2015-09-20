@@ -2,15 +2,12 @@ package com.gsa;
 
 import java.util.ArrayList;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,19 +16,24 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class ListOfMyTruckActivity extends ActionBarActivity {
+public class ListOfMyTruckActivity extends BaseActivity {
 	Context context;
 	private ListView lvMyTruckList;
+	
+	
 	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.listofmytruck_activity);
+		
+		
+		
+		
 		context = ListOfMyTruckActivity.this.getApplicationContext();
 		lvMyTruckList = (ListView) findViewById(R.id.listViewTruckList);
 		lvMyTruckList.setAdapter(new MyAdapter(this));

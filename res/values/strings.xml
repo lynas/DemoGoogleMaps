@@ -4,13 +4,21 @@
     <string name="app_name">Track Your Truck</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="drawer_open">Track Your Truck</string>
+    <string name="drawer_close"></string>
 
-    <array name="testArray">
-        <item>first</item>
-        <item>second</item>
-        <item>third</item>
-        <item>fourth</item>
-        <item>fifth</item>
+    <array name="truck_list">
+        <item>Demo-TT-S-2875</item>
+        <item>z2062-for VK</item>
+        <item>zDF-0630</item>
+        <item>zDF-1301</item>
+        <item>z2099-for VK</item>
     </array>
+    
+    <array name="option_list">
+        <item>Icon Settings</item>
+        <item>Map Refresh Settings</item>
+    </array>
+    <color name="c1">#33B5E5</color>
 
 </resources>

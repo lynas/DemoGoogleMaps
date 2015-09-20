@@ -76,6 +76,52 @@
             android:label="Navigation Drawer"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.gsa.BaseActivity"
+            >
+        </activity>
+        <activity
+            android:name="com.gsa.RemoteControlActivity"
+            android:configChanges="orientation"
+            android:label="Remote Control"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gsa.OptionActivity"
+            android:configChanges="orientation"
+            android:label="Remote Control"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gsa.QuickMapActivity"
+            android:configChanges="orientation"
+            android:label="List Of Trucks"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gsa.SearchActivity"
+            android:configChanges="orientation"
+            android:label="Search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gsa.IconSettingsActivity"
+            android:configChanges="orientation"
+            android:label="Chose an Icon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gsa.MapRefreshSettingsActivity"
+            android:configChanges="orientation"
+            android:label="Chose an Option"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gsa.LastFiveLocationActivity"
+            android:configChanges="orientation"
+            android:label="Last 5 location"
+            android:screenOrientation="portrait" >
+        </activity>
 
        
         

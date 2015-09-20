@@ -3,20 +3,15 @@ package com.gsa;
 import java.util.ArrayList;
 
 import android.content.Context;
-import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.model.LatLng;
-import com.gsa.util.MyService;
 
-public class MyLocation extends ActionBarActivity {
+public class MyLocation extends BaseActivity {
 
 	Context context;
 	TextView tvMyLat;

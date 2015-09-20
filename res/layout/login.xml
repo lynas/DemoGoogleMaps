@@ -67,7 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:text="Start Service" />
+        android:text="Start Service"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/buttonServiceStopped"
@@ -75,7 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Service Stopped" />
+        android:text="Service Stopped"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/buttonShowNotification"
@@ -83,7 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/buttonServiceStart"
         android:layout_alignLeft="@+id/buttonServiceStart"
-        android:text="Button" />
+        android:text="Button"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/buttonNavigationDrawer"
@@ -91,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/buttonShowNotification"
         android:layout_alignRight="@+id/buttonServiceStopped"
-        android:text="Navigation Drawer" />
+        android:text="Navigation Drawer"
+        />
 
 </RelativeLayout>

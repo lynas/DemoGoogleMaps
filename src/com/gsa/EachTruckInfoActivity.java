@@ -1,24 +1,22 @@
 package com.gsa;
 
-import com.gsa.util.L;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class EachTruckInfoActivity extends ActionBarActivity {
+public class EachTruckInfoActivity extends BaseActivity {
 	Context context;
 	
 	Button showInMap;
+	Button bLastFiveLocation;
 	TextView textViewLastUpdateDetailsInfo;
 	TextView textViewLocationDetailsInfo;
 	TextView textViewLatitudeLongitudeDetails;
@@ -43,6 +41,7 @@ public class EachTruckInfoActivity extends ActionBarActivity {
 		
 		
 		showInMap = (Button) findViewById(R.id.buttonShowInMap);
+		bLastFiveLocation  = (Button) findViewById(R.id.ButtonLastFiveLocation);
 		textViewLastUpdateDetailsInfo = (TextView) findViewById(R.id.textViewLastUpdateDetailsInfo);
 		textViewLocationDetailsInfo = (TextView) findViewById(R.id.textViewLocationDetailsInfo);
 		textViewLatitudeLongitudeDetails = (TextView) findViewById(R.id.textViewLatitudeLongitudeDetails);
@@ -70,6 +69,16 @@ public class EachTruckInfoActivity extends ActionBarActivity {
 				Intent intent = new Intent(context, TYTLandingPageActivity.class);
 				intent.putExtra("TruckName", ""+truckNameInfo);
 				//intent.putExtra("TruckStatus", ""+tv2.getText().toString());
+				startActivity(intent);
+				
+			}
+		});
+		
+		bLastFiveLocation.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(context, LastFiveLocationActivity.class);
 				startActivity(intent);
 				
 			}

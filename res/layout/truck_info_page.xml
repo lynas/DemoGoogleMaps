@@ -122,6 +122,18 @@
             android:layout_alignParentRight="true"
             android:background="#5f9cc5"
             android:text="Show In map" />
+
+        <Button
+            android:id="@+id/ButtonLastFiveLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonShowInMap"
+            android:layout_alignLeft="@+id/buttonShowInMap"
+            android:layout_alignRight="@+id/buttonShowInMap"
+            android:background="#5f9cc5"
+            android:text="Last 5 Location"
+            android:layout_marginBottom="5dp" />
+
     </RelativeLayout>
 
 </RelativeLayout>
